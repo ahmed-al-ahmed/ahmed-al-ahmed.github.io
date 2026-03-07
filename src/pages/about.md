@@ -3,9 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-## $ id | tee
-
-I am a seasoned Software Engineer and Application Security (AppSec) Engineer with over 8 years of experience building and securing robust digital ecosystems. My journey began in the trenches of backend development, and it has evolved into a passion for bridging the gap between high-performance code and ironclad security.
+I am a senior Security-First Software, Application Security (AppSec) Engineer, and a Penetration Tester with over 9 years of experience building and securing robust digital ecosystems. My journey began in the trenches of backend development, and it has evolved into a passion for bridging the gap between high-performance code and ironclad security.
 
 With a deep-rooted "geek" mindset, I don't just write applications—I deconstruct them. I specialize in identifying vulnerabilities before they become threats, leveraging a unique blend of developer intuition and a researcher’s curiosity.
 
