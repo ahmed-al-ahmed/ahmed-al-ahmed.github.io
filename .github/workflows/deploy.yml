@@ -20,7 +20,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
-          # package-manager: pnpm # Explicitly set if auto-detect fails
+          package-manager: pnpm # Explicitly set if auto-detect fails
 
   deploy:
     needs: build
