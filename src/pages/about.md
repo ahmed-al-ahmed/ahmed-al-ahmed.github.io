@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "$ whoami"
 ---
 
 I am a senior Security-First Software, Application Security (AppSec) Engineer, and a Penetration Tester with over 9 years of experience building and securing robust digital ecosystems. My journey began in the trenches of backend development, and it has evolved into a passion for bridging the gap between high-performance code and ironclad security.
