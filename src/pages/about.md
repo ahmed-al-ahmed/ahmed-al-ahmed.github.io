@@ -3,35 +3,29 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+## $ id | tee
 
-![Astro Paper](public/astropaper-og.jpg)
+I am a seasoned Software Engineer and Application Security (AppSec) Engineer with over 8 years of experience building and securing robust digital ecosystems. My journey began in the trenches of backend development, and it has evolved into a passion for bridging the gap between high-performance code and ironclad security.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+With a deep-rooted "geek" mindset, I don't just write applications—I deconstruct them. I specialize in identifying vulnerabilities before they become threats, leveraging a unique blend of developer intuition and a researcher’s curiosity.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## Technical Expertise
+- I have a polyglot background in programming and infrastructure, allowing me to audit and secure complex environments:
 
-## Features
+- Languages & Frameworks: Expert-level proficiency in Node.js (Express, NestJS) and PHP (Laravel). I am also fluent in reading and auditing Java (Spring Boot) and C# (ASP.NET).
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+- Cloud & DevOps: Extensive experience managing scalable infrastructure using Docker and AWS (ECS, EC2, S3, ALB, Route 53, and CloudWatch).
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+- AI-Driven Security: I actively integrate Generative AI (GPT, Gemini, Claude) to perform agentic code generation and automated security analysis, staying at the forefront of the shifting tech landscape.
 
-and so much more.
+## Security Credentials & Research
+My approach to security is hands-on and offensive-minded. I thrive in competitive environments and have a proven track record in platforms like Hack The Box (HTB) and PortSwigger Academy.
 
-## Show your support
+Professional Certifications:
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+- CPTS (Certified Penetration Testing Specialist)
+- CWES (Certified Web Exploitation Specialist)
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+## My Philosophy
+In an era where AI is rapidly changing how we build software, I believe the role of the security engineer is more critical than ever. As the sole security lead in my current professional engagements, I focus on building a "Security Culture" where code isn't just functional—it's resilient. Whether I’m hardening a CI/CD pipeline or performing a deep-dive manual code review, my goal is to ensure that innovation never comes at the cost of integrity.

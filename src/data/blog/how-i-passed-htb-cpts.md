@@ -1,7 +1,7 @@
 ---
 author: Ahmed Al Ahmed
-pubDatetime: 2026-03-06T15:22:00Z
-modDatetime: 2026-03-06T15:22:00Z
+pubDatetime: 2026-03-05T15:22:00Z
+modDatetime: 2026-03-05T15:22:00Z
 title: How I passed HTB Certified Penetration Testing Specilist
 slug: how-i-passed-htb-cpts
 featured: true
