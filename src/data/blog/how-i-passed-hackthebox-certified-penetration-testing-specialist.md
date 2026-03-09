@@ -2,8 +2,8 @@
 author: Ahmed Al Ahmed
 pubDatetime: 2026-03-05T15:22:00Z
 modDatetime: 2026-03-05T15:22:00Z
-title: How I passed HTB Certified Penetration Testing Specilist
-slug: how-i-passed-htb-cpts
+title: How I passed HTB Certified Penetration Testing Specialist
+slug: how-i-passed-htb-cpts-certified-penetration-testing-specialist
 featured: true
 draft: false
 tags:
@@ -15,6 +15,7 @@ description:
   Theoritical and practical guides on the resources I have followed when I studied and prepared for CPTS.
 ---
 
+<img src="https://media.licdn.com/dms/image/v2/D4D2DAQFClCXothBHTA/profile-treasury-image-shrink_1920_1920/B4DZq2N_o.HsAc-/0/1763993716181?e=1773644400&v=beta&t=fIGzdHwl8rBFsli-8E3MbihMqHBtPGeQxaVrkduA2Yo">
 
 ## Complete Preparation Guide, Tips, and Real Experience
 A year ago, I committed to earning the CPTS (Certified Penetration Testing Specialist). This is my complete experience: the preparation, the challenges, the exam process (without breaking NDA), and everything I learned along the way.
