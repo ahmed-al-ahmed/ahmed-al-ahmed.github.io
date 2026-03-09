@@ -11,7 +11,7 @@ tags:
   - security
   - ctf
   - certificates
-description: Theoritical and practical guides on the resources I have followed when I studied and prepared for CPTS.
+description: Theoretical and practical guides on the resources I have followed when I studied and prepared for CPTS.
 ---
 
 <img src="https://media.licdn.com/dms/image/v2/D4D2DAQFClCXothBHTA/profile-treasury-image-shrink_1920_1920/B4DZq2N_o.HsAc-/0/1763993716181?e=1773644400&v=beta&t=fIGzdHwl8rBFsli-8E3MbihMqHBtPGeQxaVrkduA2Yo">
