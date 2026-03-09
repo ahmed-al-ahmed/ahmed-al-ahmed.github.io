@@ -11,13 +11,13 @@ tags:
   - security
   - ctf
   - certificates
-description:
-  Theoritical and practical guides on the resources I have followed when I studied and prepared for CPTS.
+description: Theoritical and practical guides on the resources I have followed when I studied and prepared for CPTS.
 ---
 
 <img src="https://media.licdn.com/dms/image/v2/D4D2DAQFClCXothBHTA/profile-treasury-image-shrink_1920_1920/B4DZq2N_o.HsAc-/0/1763993716181?e=1773644400&v=beta&t=fIGzdHwl8rBFsli-8E3MbihMqHBtPGeQxaVrkduA2Yo">
 
 ## Complete Preparation Guide, Tips, and Real Experience
+
 A year ago, I committed to earning the CPTS (Certified Penetration Testing Specialist). This is my complete experience: the preparation, the challenges, the exam process (without breaking NDA), and everything I learned along the way.
 Check the post <a target="_blank" href="https://www.linkedin.com/posts/engahmedalahmed_penetrationtesting-security-cybersecurity-share-7410451463283396608-GCSr">here</a>
 and the certificate on <a target="_blank" href="https://www.credly.com/badges/3ccac3ec-24f4-4d80-8920-f57fa9051ec1/public_url">credly</a>.
@@ -32,6 +32,7 @@ Over the last year, CPTS has become more recognized across the cybersecurity ind
 - Hands-on labs and AEN training.
 
 ## 🛠️ My Preparation Strategy
+
 My approach was simple but consistent:
 
 Time Commitment: 2–3 hours per day after my full-time job.
@@ -53,6 +54,7 @@ To compensate for network instability or environment quirks, I had to:
 - Validate tool output manually to ensure accuracy.
 
 ## 🏁 The Exam Experience
+
 The exam flow generally followed: **Enumeration → Foothold → PrivEsc → Flags**.
 
 Step 1 — Enumeration
@@ -65,6 +67,7 @@ Step 3 — Completing the Flags
 By the end of Day 4, I had collected 12/14 flags. On Day 5, I finalized everything I needed for submission. I didn’t attempt the last two flags as they were not required for a pass, and I was ready to close this chapter.
 
 ## 📝 Reporting
+
 I previously failed CWES on my first attempt due to a weak report, so this time I documented everything:
 
 - Screenshots and terminal outputs.
@@ -75,6 +78,7 @@ I previously failed CWES on my first attempt due to a weak report, so this time 
 I submitted the report on Friday evening and received a "Pass" the next business day—much faster than the usual 2-week SLA.
 
 ## 🔥 My Proven Tips to Pass the CPTS Exam
+
 These are the tips I wish someone had told me before starting:
 
 Enumerate Thoroughly — Seriously. 80% of the exam depends on solid enumeration. Don’t rush this step.
