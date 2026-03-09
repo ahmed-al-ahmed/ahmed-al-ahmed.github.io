@@ -9,39 +9,14 @@ import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
 import { SITE } from "@/config";
 
-interface Social {
+export interface Social {
   name: string;
   href: string;
   linkTitle: string;
-  icon: (_props: Props) => Element;
+  icon: any; // Using 'any' for SVG imports is safer for Astro's compiler
 }
 
-export const SOCIALS: readonly [
-  {
-    name: "GitHub";
-    href: "https://github.com/ahmed-al-ahmed";
-    linkTitle: "Ahmed Al Ahmed on GitHub";
-    icon: {};
-  },
-  {
-    name: "X";
-    href: "https://x.com/ahmed_d_alahmed";
-    linkTitle: "Ahmed Al Ahmed on X";
-    icon: {};
-  },
-  {
-    name: "LinkedIn";
-    href: "https://www.linkedin.com/in/engahmedalahmed";
-    linkTitle: "Ahmed Al Ahmed on LinkedIn";
-    icon: {};
-  },
-  {
-    name: "Mail";
-    href: "mailto:eng.ahmed.d.alahmed@gmail.com";
-    linkTitle: "Send an email to Ahmed Al Ahmed";
-    icon: {};
-  },
-] = [
+export const SOCIALS: Social[] = [
   {
     name: "GitHub",
     href: "https://github.com/ahmed-al-ahmed",
@@ -66,46 +41,9 @@ export const SOCIALS: readonly [
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
   },
-] as const;
+];
 
-export const SHARE_LINKS: readonly [
-  {
-    name: "WhatsApp";
-    href: "https://wa.me/?text=";
-    linkTitle: "Share this post via WhatsApp";
-    icon: {};
-  },
-  {
-    name: "Facebook";
-    href: "https://www.facebook.com/sharer.php?u=";
-    linkTitle: "Share this post on Facebook";
-    icon: {};
-  },
-  {
-    name: "X";
-    href: "https://x.com/intent/post?url=";
-    linkTitle: "Share this post on X";
-    icon: {};
-  },
-  {
-    name: "Telegram";
-    href: "https://t.me/share/url?url=";
-    linkTitle: "Share this post via Telegram";
-    icon: {};
-  },
-  {
-    name: "Pinterest";
-    href: "https://pinterest.com/pin/create/button/?url=";
-    linkTitle: "Share this post on Pinterest";
-    icon: {};
-  },
-  {
-    name: "Mail";
-    href: "mailto:?subject=See%20this%20post&body=";
-    linkTitle: "Share this post via email";
-    icon: {};
-  },
-] = [
+export const SHARE_LINKS: Social[] = [
   {
     name: "WhatsApp",
     href: "https://wa.me/?text=",
@@ -142,4 +80,4 @@ export const SHARE_LINKS: readonly [
     linkTitle: `Share this post via email`,
     icon: IconMail,
   },
-] as const;
+];
