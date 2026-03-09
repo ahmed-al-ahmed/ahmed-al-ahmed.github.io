@@ -16,7 +16,7 @@ interface Social {
   icon: (_props: Props) => Element;
 }
 
-export const SOCIALS: Social[] = [{
+export const SOCIALS: readonly [{
     name: "GitHub";
     href: "https://github.com/ahmed-al-ahmed";
     linkTitle: "Ahmed Al Ahmed on GitHub";
@@ -58,7 +58,7 @@ export const SOCIALS: Social[] = [{
   },
 ] as const;
 
-export const SHARE_LINKS: Social[] = [{
+export const SHARE_LINKS: readonly [{
     name: "WhatsApp";
     href: "https://wa.me/?text=";
     linkTitle: "Share this post via WhatsApp";
