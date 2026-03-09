@@ -58,7 +58,7 @@ export const SOCIALS: Social[] = [{
   },
 ] as const;
 
-export const SHARE_LINKS: Social =[] [{
+export const SHARE_LINKS: Social[] = [{
     name: "WhatsApp";
     href: "https://wa.me/?text=";
     linkTitle: "Share this post via WhatsApp";
