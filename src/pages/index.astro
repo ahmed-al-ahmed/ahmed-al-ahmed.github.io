@@ -7,13 +7,11 @@ import Socials from "@/components/Socials.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
-import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 
 const posts = await getCollection("blog");
-
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
@@ -22,74 +20,59 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
-    <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        $ id | tee
-      </h1>
-
-      <p>
-        Senior Application Security (AppSec) Engineer, and a Penetration Tester
+    <section id="hero" class="border-b border-border pt-8 pb-8">
+      <p class="mb-3 text-sm font-semibold tracking-wide text-muted">SOFTWARE ENGINEERING · FINANCIAL TECHNOLOGY</p>
+      <h1 class="my-4 text-4xl font-bold sm:text-5xl">Staff Software Engineer</h1>
+      <h2 class="mb-5 text-xl font-medium sm:text-2xl">Backend Engineering · Distributed Systems · Cloud Architecture</h2>
+      <p class="max-w-3xl text-lg leading-relaxed">
+        I build reliable software systems and financial infrastructure, with security built into the engineering process. My work spans backend platforms, payments, service architecture, cloud operations, and engineering quality.
       </p>
-      {
-        // only display if at least one social link is enabled
-        SOCIALS.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
+      <p class="mt-4 max-w-3xl">
+        My experience includes payment infrastructure, platforms spanning 20+ microservices, large-scale cloud migrations, query optimization, engineering standards, and cross-team technical leadership.
+      </p>
+      <p class="mt-4 text-sm">Node.js · TypeScript · NestJS · PHP · Laravel · AWS · RabbitMQ · PostgreSQL</p>
+      {SOCIALS.length > 0 && (
+        <div class="mt-5 flex max-sm:flex-col sm:items-center">
+          <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Connect:</div>
+          <Socials />
+        </div>
+      )}
+      <div class="mt-5 flex flex-wrap gap-3">
+        <LinkButton href="/about/">About my work <IconArrowRight class="inline-block rtl:-rotate-180" /></LinkButton>
+        <LinkButton href="/posts/">Technical writing <IconArrowRight class="inline-block rtl:-rotate-180" /></LinkButton>
+      </div>
     </section>
 
-    {
-      featuredPosts.length > 0 && (
-        <section
-          id="featured"
-          class:list={[
-            "pt-12 pb-6",
-            { "border-b border-border": recentPosts.length > 0 },
-          ]}
-        >
-          <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
-          <ul>
-            {featuredPosts.map(data => (
-              <Card variant="h3" {...data} />
-            ))}
-          </ul>
-        </section>
-      )
-    }
+    <section class="border-b border-border py-10" aria-labelledby="focus-heading">
+      <h2 id="focus-heading" class="mb-5 text-2xl font-semibold tracking-wide">Engineering focus</h2>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div><h3 class="text-lg font-semibold">Backend & distributed systems</h3><p class="mt-2">Designing service boundaries, integrations, and dependable systems that support financial products.</p></div>
+        <div><h3 class="text-lg font-semibold">Platform & cloud</h3><p class="mt-2">Improving cloud infrastructure, data access, service operations, and the engineering standards teams rely on.</p></div>
+        <div><h3 class="text-lg font-semibold">Technical leadership</h3><p class="mt-2">Taking cross-team ownership of architecture, engineering quality, and complex platform improvements.</p></div>
+        <div><h3 class="text-lg font-semibold">Application security</h3><p class="mt-2">Bringing hands-on security and research experience into how software is designed, built, and operated.</p></div>
+      </div>
+    </section>
 
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
-          <ul>
-            {recentPosts.map(
-              (data, index) =>
-                index < SITE.postPerIndex && <Card variant="h3" {...data} />
-            )}
-          </ul>
-        </section>
-      )
-    }
-
-    <div class="my-8 text-center">
-      <LinkButton href="/posts/">
-        All Posts
-        <IconArrowRight class="inline-block rtl:-rotate-180" />
-      </LinkButton>
-    </div>
+    {featuredPosts.length > 0 && (
+      <section id="featured" class:list={["border-b border-border pt-10 pb-6", { "": recentPosts.length > 0 }]}>
+        <h2 class="text-2xl font-semibold tracking-wide">Selected writing</h2>
+        <ul>{featuredPosts.map(data => <Card variant="h3" {...data} />)}</ul>
+      </section>
+    )}
+    {recentPosts.length > 0 && (
+      <section id="recent-posts" class="pt-10 pb-6">
+        <h2 class="text-2xl font-semibold tracking-wide">Recent posts</h2>
+        <ul>{recentPosts.slice(0, SITE.postPerIndex).map(data => <Card variant="h3" {...data} />)}</ul>
+      </section>
+    )}
+    <div class="my-8 text-center"><LinkButton href="/posts/">All writing <IconArrowRight class="inline-block rtl:-rotate-180" /></LinkButton></div>
   </main>
   <Footer />
 </Layout>
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
-      ?.dataset?.layout;
-    if (indexLayout) {
-      sessionStorage.setItem("backUrl", "/");
-    }
+    const indexLayout = (document.querySelector("#main-content") as HTMLElement)?.dataset?.layout;
+    if (indexLayout) sessionStorage.setItem("backUrl", "/");
   });
 </script>
