@@ -26,7 +26,7 @@ Node.js, TypeScript, NestJS, PHP, Laravel, AWS, RabbitMQ, PostgreSQL, and Docker
 
 ## Security background
 
-Application security remains an important part of how I engineer. My hands-on background includes secure code review, vulnerability research, and penetration testing, supported by CPTS (Certified Penetration Testing Specialist), CWES (Certified Web Exploitation Specialist), and CWEE (Certified Web Exploitation Expert) certifications.
+Application and product security remain important parts of how I engineer. My AppSec and ProdSec experience includes secure code review, vulnerability research, and penetration testing, supported by CPTS (Certified Penetration Testing Specialist), CWES (Certified Web Exploitation Specialist), and CWEE (Certified Web Exploitation Expert) certifications.
 
 I use that experience to make security a practical part of architecture and delivery, alongside reliability, maintainability, and product needs.
 

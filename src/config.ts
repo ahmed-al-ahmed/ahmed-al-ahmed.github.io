@@ -3,7 +3,7 @@ export const SITE = {
   author: "Ahmed Al Ahmed",
   profile: "https://www.linkedin.com/in/engahmedalahmed",
   desc: "Staff Software Engineer focused on backend engineering, distributed systems, and financial technology, with application security as an engineering strength.",
-  title: "Ahmed Al Ahmed | Software Engineer",
+  title: "Ahmed Al Ahmed | Staff Software Engineer",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
